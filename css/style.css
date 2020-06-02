@@ -51,6 +51,7 @@
     height: 85px;
     background: #C4C4C4;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .product-discount {
