@@ -1,0 +1,250 @@
+.product-card-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 2.7vh;
+    grid-column-gap: 15px;
+    margin: 43px 30vw auto 30vw;
+}
+
+.product-card {
+    height: 273px;
+    width: 160px;
+    border: 1px solid #E5E5E5;
+    box-sizing: content-box;
+}
+
+.product-content {
+    margin: 17px 22px;
+    display: grid;
+    grid-template-rows: 4.2fr 2fr;
+}
+
+.product-content-upper {
+    position: relative;
+}
+
+.product-content-lower {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.rating-stars {
+    height: 11px;
+}
+
+.fa-star {
+    font-size: 0.7em !important;
+    margin-right: 0.3vw;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.gray {
+    color: gray;
+}
+
+.product-img {
+    background-color: gray;
+    width: 114.16px;
+    height: 85px;
+    background: #C4C4C4;
+    overflow: hidden;
+}
+
+.product-discount {
+    width: 28.04px;
+    height: 28px;
+    border-radius: 50%;
+    background: #EB1A1A;
+    position: absolute;
+    top: 0;
+    margin-left: -1vw;
+    margin-top: -1vh;
+}
+
+.product-discount p {
+    width: 19.03px;
+    height: 12px;
+    margin-left: 5px;
+    margin-top: 8px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 12px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.product-name {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+    color: #515151;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-price {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.original-price {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #C4C4C4;
+}
+
+.discount-price {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #EB1A1A;
+}
+
+.add-to-cart {
+    background: #65B059;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    border: none;
+    font-size: 10px;
+    height: 24px;
+    line-height: 12px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+
+/***********  SEARCH FIELD *****************/
+
+
+/* The search field */
+
+#myInput {
+    box-sizing: border-box;
+    width: 135px;
+    height: 26px;
+    left: 890px;
+    top: 19px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* The search field when it gets focus/clicked on */
+
+#myInput:focus {
+    outline: 3px solid #ddd;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: absolute;
+    top: 6.5%;
+    left: 10%;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    width: 135px;
+    height: 115px;
+    left: 890px;
+    top: 44px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #000000;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+
+
+/**********   MEDIA QUERY *****************/
+
+@media screen and (max-width: 992px) {
+    .product-card-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .product-card {
+        margin-bottom: 2vh;
+    }
+    .dropdown {
+        position: absolute;
+        top: 6.5%;
+        left: 2%;
+    }
+    #myInput {
+        box-sizing: border-box;
+        width: 90px;
+        height: 17px;
+        font-size: 0.6em;
+    }
+    .dropdown-content {
+        width: 90px;
+        height: 76px;
+        line-height: 0.5em;
+    }
+    .dropdown-content a {
+        font-size: 0.6em;
+        padding: 6px 9px;
+    }
+}

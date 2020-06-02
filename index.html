@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="wrapper">
+
+            <div class="product-card-container"></div>
+
+            <div class="dropdown">
+                <input type="text" onclick="toggleDropdown()" placeholder="Sort by..." id="myInput">
+                <div id="myDropdown" class="dropdown-content">
+                    <a id="sort-by-price" onclick="sortByPrice()">Sort by price</a>
+                    <a id="sort-by-discount" onclick="sortByDiscount()">Sort by discount</a>
+                    <a id="sort-by-rating" onclick="sortByRating()">Sort by rating</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
