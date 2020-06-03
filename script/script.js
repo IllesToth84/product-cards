@@ -109,17 +109,8 @@ function displayCard() {
 displayCard();
 
 
-
-/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-
 function toggleDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function origLayout() {
-    let productContainer = document.querySelector('.product-card-container');
-    productContainer.innerHTML = '';
-    displayCard();
 }
 
 function sortByPrice() {
